@@ -1,0 +1,300 @@
+*{
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('./images/crumbs-bread-leftover-food-waste_23-2148764812.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+#offer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    /* position: relative; */
+    z-index: 1000;
+    
+}
+#move{
+    position: relative;
+    animation: move-words 40s linear infinite;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+@keyframes move-words {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+
+#nav{
+    width: 90%;
+    margin:4% 5%;
+    background-color: beige;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    justify-items: center;
+    border-radius: 3px;
+    position: fixed;
+    z-index: 1000;
+}
+#nav h1{
+    margin: 10px 20px;
+    font-size: 35px;
+}
+#navbar{
+    margin: 20px;
+    font-size: 20px;
+
+}
+.navself{
+    margin-right:25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.navself:hover{
+    color: brown;
+}
+#cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+#cart button{
+    width: 80px;
+    height: 35px;
+    margin: 20px;
+    margin-right: 40px;
+    padding: 0 6px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5%;
+}
+#cart a{
+    color: white; 
+    text-decoration: none;
+}
+#cart a:hover{
+    color: black;
+}
+#cart button:hover{
+    background-color: rgba(245, 245, 220, 0);
+    border: 1px solid black;
+}
+#caption{
+    position: absolute;
+    margin: 12% 5%;
+    font-size: 65px;
+}
+#caption button{
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    margin-right: 40px;
+    padding: 0 6px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    border: 1px solid black;
+    
+}
+#button{
+    width: 200px;
+    height: 60px;
+}
+#caption a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#button:hover a{
+    color: rgb(255, 255, 255);
+}
+#caption button:hover{
+    background-color: rgb(0, 0, 0);
+    
+}
+#caption h1{
+    color: rgba(53, 6, 6, 0.918);
+}
+#review{
+    width: 100%;
+    background-image: url('./images/elevated-view-breads-utensils-egg-spices-forming-frame-black-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    color: white;
+    margin-top: 100px;
+    height: 300px;
+}
+#review div{
+    margin-top: 100px;
+    width: 100%;
+    height: 181px;
+    background-color: rgba(0, 0, 0, 0.671);
+    text-align: center;
+    padding: 60px 0;
+}
+#standard{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 30px;
+    padding: 100px 0;
+
+}
+#standard h2, h3,p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+#seemore a{
+    text-decoration: none;
+    color: rgba(53, 6, 6, 0.918);
+    font-size: 20px;
+}
+
+#seemore{
+    margin: 150px 10%;
+}
+#about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 80px 0;
+    background-image: url('./images/textured-wall-background-texture_1368-6403.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#about h3{
+    margin: 25px 15%;
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 230px;
+
+}
+#about h4{
+    margin: 20px 15%;
+}
+#about h1{
+    margin:0 15%;
+    margin-top: 340px;
+}
+/* #menu{
+    background-image: url('https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-139795.jpg?t=st=1725737337~exp=1725740937~hmac=c1ab58ac69937505fc022d4fcd3803a3e5caebe59a66e214be6fed025301e01e&w=1380');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+/* #backblack{
+    background-color: rgba(49, 2, 2, 0);
+    width: 100%;
+    margin: -80px 0;
+} */
+ #backblack{
+    background-image: linear-gradient(to top, beige, white);
+    padding: 0 0 50px 0;
+ }
+#menu1 h1{
+    text-align: center;
+    margin-top: 80px;
+}
+#menulist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 70px;
+    margin: 80px 400px;
+    border: 1px solid rgba(204, 180, 180, 0);
+
+}
+#menulist img{
+    border-radius: 30px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform .2s ease-in-out;
+}
+#menulist img:hover{
+    transform: scale(1.05);
+}
+#divgap{
+    width: 100%;
+    background-image: url('./images/baking-ingredients-rolling-pin-black-background_23-2147955215.jpg');
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#revw{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 100px;
+    padding: 30px;
+    margin: 100px 250px 60px 250px;
+}
+#revw div{
+    /* border: 1px solid black; */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow:0px 0px 5px rgba(139, 139, 137, 0.363);
+}
+#revw img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    object-fit: cover;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+
+}
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 40px 750px;
+}
+.icon a{
+    color: white;
+    
+}
+.icon{
+    transition: transform .2s;
+}
+.icon :hover{
+    transform: scale(1.5);
+    color: rgb(214, 164, 164);
+}
+#up{
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    float: right;
+    padding: 10px;
+    margin-right: 30px;
+}
+html{
+    scroll-behavior: smooth;
+}
